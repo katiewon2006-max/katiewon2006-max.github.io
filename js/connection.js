@@ -1,0 +1,2 @@
+window.addEventListener('message',e=>{if([...document.querySelectorAll('iframe')].some(f=>f.contentWindow===e.source)&&Number.isFinite(e.data?.sceneScroll))window.scrollBy({top:e.data.sceneScroll,behavior:'instant'})});
+const scaleFrame=document.querySelector('iframe[src="scale/index.html"]');const streetSection=document.querySelector('.street-locked');window.addEventListener('message',e=>{if(e.source!==scaleFrame.contentWindow||typeof e.data?.scaleComplete!=='boolean')return;streetSection.hidden=!e.data.scaleComplete;});
