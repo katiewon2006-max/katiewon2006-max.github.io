@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>그들은 왜 이런 소비를 할까?</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <section class="story" aria-labelledby="title">
+      <h1 id="title" class="visually-hidden">그들은 왜 이런 소비를 할까?</h1>
+      <input class="step-input visually-hidden" type="radio" name="basket-step" id="step-0" aria-label="인형 0개 담긴 장바구니" checked>
+      <input class="step-input visually-hidden" type="radio" name="basket-step" id="step-1" aria-label="인형 1개 담긴 장바구니">
+      <input class="step-input visually-hidden" type="radio" name="basket-step" id="step-2" aria-label="인형 2개 담긴 장바구니">
+      <input class="step-input visually-hidden" type="radio" name="basket-step" id="step-3" aria-label="인형 3개 담긴 장바구니">
+      <input class="step-input visually-hidden" type="radio" name="basket-step" id="step-4" aria-label="인형 4개 담긴 장바구니">
+      <img class="background" src="images/background.webp" alt="">
+      <div class="description-cover" aria-hidden="true"></div>
+      <img class="title" src="images/title.webp" alt="">
+      <img class="instruction" src="images/instruction.webp" alt="장바구니를 눌러 하나씩 담아보세요.">
+      <img class="basket basket--0" src="images/basket-0.webp" alt="빈 장바구니" decoding="sync">
+      <img class="basket basket--1" src="images/basket-1.webp" alt="메구미가 담긴 장바구니" decoding="sync">
+      <img class="basket basket--2" src="images/basket-2.webp" alt="딸기 라코 추가" decoding="sync">
+      <img class="basket basket--3" src="images/basket-3.webp" alt="갈색 머리 인형 추가" decoding="sync">
+      <img class="basket basket--4" src="images/basket-4.webp" alt="카츠라 추가" decoding="sync">
+      <img class="gauge-labels" src="images/gauge-labels.webp" alt="스트레스, 만족감">
+      <svg class="gauges" viewBox="0 0 2048 1152" role="img" aria-label="인형을 담을 때마다 스트레스가 10퍼센트 줄고 만족감이 10퍼센트 증가합니다.">
+        <defs>
+          <clipPath id="stress"><polygon points="418 1000 439 979 1787 979 1807 1000 1787 1021 439 1021"/></clipPath>
+          <clipPath id="satisfaction"><polygon points="418 1080 439 1059 1787 1059 1807 1080 1787 1101 439 1101"/></clipPath>
+        </defs>
+        <g clip-path="url(#stress)"><rect class="stress-fill" x="418" y="979" height="42" fill="#fb2384"/></g>
+        <g clip-path="url(#satisfaction)"><rect class="satisfaction-fill" x="418" y="1059" height="42" fill="#1f2a88"/></g>
+        <polygon class="outline" points="418 1000 439 979 1787 979 1807 1000 1787 1021 439 1021"/>
+        <polygon class="outline" points="418 1080 439 1059 1787 1059 1807 1080 1787 1101 439 1101"/>
+        <g class="value value--1"><text x="1770" y="1009">90%</text><text x="1770" y="1089">10%</text></g>
+        <g class="value value--2"><text x="1770" y="1009">80%</text><text x="1770" y="1089">20%</text></g>
+        <g class="value value--3"><text x="1770" y="1009">70%</text><text x="1770" y="1089">30%</text></g>
+        <g class="value value--4"><text x="1770" y="1009">60%</text><text x="1770" y="1089">40%</text></g>
+      </svg>
+      <label class="next next--0" for="step-1"><span class="visually-hidden">메구미 추가하기</span></label>
+      <label class="next next--1" for="step-2"><span class="visually-hidden">딸기 라코 추가하기</span></label>
+      <label class="next next--2" for="step-3"><span class="visually-hidden">갈색 머리 인형 추가하기</span></label>
+      <label class="next next--3" for="step-4"><span class="visually-hidden">카츠라 추가하기</span></label>
+    </section>
+  </main>
+</body>
+</html>

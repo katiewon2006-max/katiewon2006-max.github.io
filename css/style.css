@@ -1,0 +1,107 @@
+/* Full-screen composition, authored at 1920 × 1080. */
+* { box-sizing: border-box; }
+body { margin: 0; background: #fff6d9; }
+.story {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  isolation: isolate;
+  --stress: 1389px;
+  --satisfaction: 0px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+.background, .gauges { position: absolute; inset: 0; width: 100%; height: 100%; }
+.background, .title, .instruction, .basket, .gauge-labels, .gauges { pointer-events: none; }
+.title {
+  position: absolute;
+  left: 4.5%;
+  top: 7%;
+  width: 30%;
+  height: 61%;
+  object-fit: contain;
+  transition: opacity 300ms;
+}
+.instruction {
+  position: absolute;
+  left: 77.64%;
+  top: 29.51%;
+  width: 17.58%;
+}
+.basket {
+  position: absolute;
+  left: 26.8%;
+  top: 10.2%;
+  width: 46.5%;
+  height: auto;
+  display: block;
+  visibility: hidden;
+}
+.basket--0 { left: 45.1%; top: 19%; width: 40.7%; }
+.gauge-labels { position: absolute; left: 10.986%; top: 83.594%; width: 9.033%; }
+.outline { fill: none; stroke: #004587; stroke-width: 3.6; stroke-linejoin: round; }
+.stress-fill { width: var(--stress); transition: width 400ms ease; }
+.satisfaction-fill { width: var(--satisfaction); transition: width 400ms ease; }
+.value { display: none; fill: #004587; font-family: Arial, sans-serif; font-size: 30px; text-anchor: end; }
+.next {
+  display: none;
+  position: absolute;
+  left: 26.8%;
+  top: 10.2%;
+  width: 46.5%;
+  height: 72%;
+  cursor: pointer;
+}
+.next--0 { left: 45.1%; top: 19%; width: 40.7%; height: 64%; }
+.story:has(.step-input:not(#step-0):checked) .title { opacity: .32; }
+.story:has(.step-input:not(#step-0):checked) .instruction { left: 62.5%; top: 21%; }
+
+#step-0:checked ~ .basket--0 { visibility: visible; }
+.story:has(#step-0:checked) { --stress: 1389.0px; --satisfaction: 0.0px; }
+#step-0:checked ~ .next--0 { display: block; }
+#step-0:focus-visible ~ .next--0 { outline: 3px solid #004587; outline-offset: -3px; }
+
+#step-1:checked ~ .basket--1 { visibility: visible; }
+.story:has(#step-1:checked) { --stress: 1250.1px; --satisfaction: 138.9px; }
+#step-1:checked ~ .next--1 { display: block; }
+#step-1:checked ~ .gauges .value--1 { display: block; }
+#step-1:focus-visible ~ .next--1 { outline: 3px solid #004587; outline-offset: -3px; }
+
+#step-2:checked ~ .basket--2 { visibility: visible; }
+.story:has(#step-2:checked) { --stress: 1111.2px; --satisfaction: 277.8px; }
+#step-2:checked ~ .next--2 { display: block; }
+#step-2:checked ~ .gauges .value--2 { display: block; }
+#step-2:focus-visible ~ .next--2 { outline: 3px solid #004587; outline-offset: -3px; }
+
+#step-3:checked ~ .basket--3 { visibility: visible; }
+.story:has(#step-3:checked) { --stress: 972.3px; --satisfaction: 416.7px; }
+#step-3:checked ~ .next--3 { display: block; }
+#step-3:checked ~ .gauges .value--3 { display: block; }
+#step-3:focus-visible ~ .next--3 { outline: 3px solid #004587; outline-offset: -3px; }
+
+#step-4:checked ~ .basket--4 { visibility: visible; }
+.story:has(#step-4:checked) { --stress: 833.4px; --satisfaction: 555.6px; }
+#step-4:checked ~ .gauges .value--4 { display: block; }
+#step-4:focus-visible ~ .next--3 { outline: 3px solid #004587; outline-offset: -3px; }
+@media (prefers-reduced-motion: reduce) {
+  .stress-fill, .satisfaction-fill, .title { transition: none; }
+}
+
+/* The explanatory sentence belongs to the opening scene. */
+.description-cover {
+  position: absolute;
+  left: 6.5%;
+  top: 69.5%;
+  width: 29%;
+  height: 11%;
+  background: #fff6d9;
+  opacity: 0;
+  pointer-events: none;
+}
+.story:has(.step-input:not(#step-0):checked) .description-cover { opacity: 1; }
