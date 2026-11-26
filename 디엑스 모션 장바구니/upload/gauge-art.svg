@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="_레이어_1" data-name=" 레이어 1" viewBox="0 0 5442.52 3061.42">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Paperlogy-7Bold, Paperlogy;
+        font-weight: 700;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #003c8b;
+      }
+
+      .cls-1, .cls-3 {
+        font-size: 86px;
+      }
+
+      .cls-1, .cls-3, .cls-4, .cls-5 {
+        isolation: isolate;
+      }
+
+      .cls-6 {
+        fill: #ff2296;
+      }
+
+      .cls-7 {
+        fill: #fff6d9;
+      }
+
+      .cls-3 {
+        fill: #133d8d;
+        font-family: Paperlogy-6SemiBold, Paperlogy;
+        font-weight: 600;
+      }
+
+      .cls-8 {
+        fill: #28539a;
+      }
+
+      .cls-9 {
+        fill: #fb2384;
+      }
+
+      .cls-10 {
+        fill: #063a8a;
+        stroke: #e62e8b;
+      }
+
+      .cls-10, .cls-11 {
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
+      }
+
+      .cls-5 {
+        fill: #6d6d6d;
+        font-family: Paperlogy-4Regular, Paperlogy;
+        font-size: 65px;
+      }
+
+      .cls-12 {
+        fill: none;
+        stroke: #003c8a;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 10px;
+      }
+
+      .cls-11 {
+        fill: #e62e8b;
+        stroke: #063a8a;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-12" points="1111.95 2662.47 1166.44 2601.39 4748.67 2601.39 4802.24 2654.97 4749.21 2715.11 1168.82 2715.11 1111.95 2662.47" />
+  <polygon class="cls-12" points="1111.95 2874.35 1166.44 2813.27 4748.67 2813.27 4802.24 2866.84 4749.21 2926.98 1168.82 2926.98 1111.95 2874.35" />
+  <g class="cls-4">
+    <text class="cls-1" transform="translate(757.6899 2685.52)"><tspan x="0" y="0">스트레스</tspan></text>
+  </g>
+  <g class="cls-4">
+    <text class="cls-1" transform="translate(759.9299 2886.6)"><tspan x="0" y="0">만족감</tspan></text>
+  </g>
+  <polygon class="cls-6" points="615.43 2656.76 698.61 2580.16 671.68 2650.77 718.96 2651.37 639.37 2736.35 667.2 2667.95 615.43 2656.76" />
+  <path class="cls-2" d="M675.03,2787.28s-1.89,57.71-59.6,68.12c0,0,51.09-12.3,59.6,57.71,0,0,4.73-65.28,56.76-62.91,0,0-48.51,0-56.76-62.91h0Z" />
+  </svg>
